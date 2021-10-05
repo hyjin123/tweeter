@@ -1,4 +1,4 @@
-header {
+#avatar-name {
   height: 400px;
   width: 100%;
   margin-top: 120px;
@@ -9,4 +9,8 @@ header {
   align-items: center;
   background-color: #f5ee5f;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+}
+
+#main-avatar {
+  width: 200px;
 }

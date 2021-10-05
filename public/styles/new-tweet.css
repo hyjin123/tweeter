@@ -23,10 +23,10 @@ textarea {
 button {
   background-color: #4056A1;
   color: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 0.8em;
 }
 
-/* output {
-  color: white;
-} */
+.smaller-font {
+  font-size: 0.9em;
+}
