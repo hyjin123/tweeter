@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
 
     <!-- External JS -->
@@ -23,6 +23,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <link
     rel="stylesheet"
@@ -49,9 +50,9 @@
       </div>
     </nav>
     <!-- Header (Avatar + Name)-->
-    <header>
+    <header id="avatar-name">
       <div>
-        <img src="/images/profile-hex.png"> 
+        <img id="main-avatar" src="/images/avatar.png"> 
       </div>
       <br>
       <div>
@@ -60,16 +61,67 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <form method="POST" action="/tweets/">
-          <label for="tweet-text" class="heavy-font">What are you humming about?</label>
+          <label for="tweet-text" class="heavy-font smaller-font">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div class="tweet-button bungee-font">
+          <div class="tweet-button bungee-font smaller-font">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
+
+      <section>
+        <article class="tweet">
+          <header class="tweet-header">
+            <div class="avatar-name">
+              <img class="article-avatar" src="/images/little-kid.png">
+              <span id="tweet-name" class="smaller-font">Sean Jin</span>
+            </div>
+            <div id="tweet-handle">
+              <span>@butterflycatcher</span>
+            </div>
+          </header>
+          <p class="smaller-font">WELL WELL WELL, look who decided to show up</p>
+          <footer class="tweet-footer">
+            <div>
+              <span>10 days ago</span>
+            </div>
+            <div>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
+        <article class="tweet">
+          <header class="tweet-header">
+            <div class="avatar-name">
+              <img class="article-avatar" src="/images/person1.png">
+              <span id="tweet-name" class="smaller-font">Nancy Tran</span>
+            </div>
+            <div id="tweet-handle">
+              <span>@newperson</span>
+            </div>
+          </header>
+          <p class="smaller-font">I declare bankruptsy!!</p>
+          <footer class="tweet-footer">
+            <div>
+              <span>12 days ago</span>
+            </div>
+            <div>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
+      </section>
+
     </main>
   </body>
 </html>

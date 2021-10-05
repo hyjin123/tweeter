@@ -25,6 +25,8 @@ button {
   color: #FFFFFF;
   border-radius: 3px;
   font-size: 0.8em;
+  border: none;
+  padding: 10px;
 }
 
 .smaller-font {
