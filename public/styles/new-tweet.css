@@ -18,6 +18,7 @@ textarea {
   outline: none;
   height: 35px;
   background-color: #f4f1ec;
+  font-size: 0.8em;
 }
 
 button {
@@ -31,4 +32,9 @@ button {
 
 .smaller-font {
   font-size: 0.9em;
+}
+
+button:hover {
+  background-color: #5C78D9;
+  color: #444448;
 }
