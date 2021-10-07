@@ -50,7 +50,7 @@ const createTweetElement = function (data) {
           <span>${escape(data.user.handle)}</span>
         </div>
       </header>
-      <p class="smaller-font">${escape(data.content.text)}</p>
+      <p class="text smaller-font">${escape(data.content.text)}</p>
       <footer class="tweet-footer">
         <div>
           <span>${escape(timeago.format(data.created_at))}</span>
@@ -66,6 +66,7 @@ const createTweetElement = function (data) {
   return $markup;
 };
 
+// renders error message pop up on the HTML using slidedown
 const errorMessage = function(message) {
   const $markup = `
   <section hidden id="error">
@@ -104,12 +105,14 @@ $form.submit(function(event) {
     data: serializedData,
     success: (data) => {
       console.log("server received the data!")
-      // hide the error message after submission
-      $("#error").slideUp("slow")
       // Load the tweet right after submission
       loadTweets();
       //clear the form after data is passed to the server
       $(this)[0].reset();
+     // hide the error message after submission
+      $("#error").slideUp("slow")
+      // reset the character counter after submission
+      $(".counter").text(140);
     }
   })
 })

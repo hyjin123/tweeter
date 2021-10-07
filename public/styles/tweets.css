@@ -54,3 +54,7 @@ footer i {
 footer i:hover {
   color: #BDB710;
 }
+
+.text {
+  overflow-wrap: break-word;
+}
