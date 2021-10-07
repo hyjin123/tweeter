@@ -38,3 +38,11 @@ button:hover {
   background-color: #5C78D9;
   color: #444448;
 }
+
+.error-message {
+  border: 2px solid red;
+  text-align: center;
+  color: red;
+  margin: 20px 40px 0;
+  padding: 10px 0;
+}

@@ -62,9 +62,22 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-
+      <section hidden id="empty">
+        <div class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Your tweet cannot be empty!"</span>
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+      </section>
+      <section hidden id="exceed">
+        <div class="error-message">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Your tweet cannot exceed 140 characters!</span>
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+      </section>
       <section class="new-tweet">
-        <form method="POST" action="/tweets/">
+        <form method="POST" action="/tweets">
           <label for="tweet-text" class="heavy-font smaller-font">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="tweet-button bungee-font smaller-font">
@@ -75,52 +88,7 @@
       </section>
 
       <section id="tweets-container">
-        <article class="tweet">
-          <header class="tweet-header">
-            <div class="avatar-name">
-              <img class="article-avatar" src="/images/little-kid.png">
-              <span id="tweet-name" class="smaller-font">Sean Jin</span>
-            </div>
-            <div id="tweet-handle">
-              <span>@butterflycatcher</span>
-            </div>
-          </header>
-          <p class="smaller-font">WELL WELL WELL, look who decided to show up</p>
-          <footer class="tweet-footer">
-            <div>
-              <span>10 days ago</span>
-            </div>
-            <div>
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-
-        <article class="tweet">
-          <header class="tweet-header">
-            <div class="avatar-name">
-              <img class="article-avatar" src="/images/person1.png">
-              <span id="tweet-name" class="smaller-font">Nancy Tran</span>
-            </div>
-            <div id="tweet-handle">
-              <span>@newperson</span>
-            </div>
-          </header>
-          <p class="smaller-font">I declare bankruptsy!!</p>
-          <footer class="tweet-footer">
-            <div>
-              <span>12 days ago</span>
-            </div>
-            <div>
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-
+        <!-- where the tweets will go -->
       </section>
 
     </main>
