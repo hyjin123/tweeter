@@ -66,18 +66,34 @@ const createTweetElement = function (data) {
   return $markup;
 };
 
+const errorMessage = function(message) {
+  const $markup = `
+  <section hidden id="error">
+    <div class="error-message">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span>${message}</span>
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+  </section>
+  `
+  $(".container").prepend($markup);
+  $("#error").slideDown("slow")
+};
+
 const $form = $("form");
 $form.submit(function(event) {
   event.preventDefault();
   // fetch the value of the submitted tweet (data)
   const value = $(this).serializeArray()[0].value;
+  // hide the error message before validation
+  $("#error").slideUp("slow")
   // if the text has no length, alert a message
   if (!value.length || value === null) {
-    $("#empty").slideDown("slow", function(){});
+    return errorMessage("Your tweet cannot be empty!");
   }
   // if the text exceeds 140 characters, alert a message
   if (value.length > 140) {
-    $("#exceed").slideDown("slow", function(){});
+    return errorMessage("Your tweet cannot exceed 140 characters!");
   }
   const serializedData = $(this).serialize();
   // GET request using jQuery library
@@ -88,6 +104,8 @@ $form.submit(function(event) {
     data: serializedData,
     success: (data) => {
       console.log("server received the data!")
+      // hide the error message after submission
+      $("#error").slideUp("slow")
       // Load the tweet right after submission
       loadTweets();
       //clear the form after data is passed to the server
