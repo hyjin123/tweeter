@@ -4,6 +4,7 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +37,7 @@
   </head>
 
   <body>
+
     <!-- Top nav bar (fixed) -->
     <nav>
       <div id="logo">
@@ -50,6 +52,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Header (Avatar + Name)-->
     <header id="avatar-name">
       <div>
@@ -60,11 +63,12 @@
         <h2>Sean Jin</h2>
       </div>
     </header>
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
       
       <!-- Tweet submission form goes here -->
-      <section class="new-tweet">
+      <section class="new-tweet" hidden>
         <form method="POST" action="/tweets">
           <label for="tweet-text" class="heavy-font smaller-font">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>

@@ -15,9 +15,17 @@ const loadTweets = function() {
       renderTweets(data);
     }
   })
-}
+};
+
 // Load the previous made tweets as soon as the browser is loaded
 loadTweets();
+
+// feature that toggles the form when you press the arrow button in the nav bar
+$("#tweet").click(function() {
+  $(".new-tweet").toggle("slow");
+  $("#error").slideUp("slow");
+  $("textarea").focus();
+});
 
 // preventing XSS with Escaping
 const escape = function (str) {
@@ -78,9 +86,10 @@ const errorMessage = function(message) {
   </section>
   `
   $(".container").prepend($markup);
-  $("#error").slideDown("slow")
+  $("#error").slideDown("slow");
 };
 
+// Ajax POST request
 const $form = $("form");
 $form.submit(function(event) {
   event.preventDefault();
@@ -104,7 +113,6 @@ $form.submit(function(event) {
     dataType: "text",
     data: serializedData,
     success: (data) => {
-      console.log("server received the data!")
       // Load the tweet right after submission
       loadTweets();
       //clear the form after data is passed to the server
