@@ -6,9 +6,9 @@ This app is built using HTML, CSS, JS, jQuery and AJAX for for the front-end
 
 ## Final Product
 
-!["Screenshot of Tweeter Page (medium sized window)"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-form-hidden.png?raw=true)
-
 !["Screenshot of Tweeter Page (large sized window)"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-large-desktop.png?raw=true)
+
+!["Screenshot of Tweeter submission error (medium sized window)"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-error-message.png?raw=true)
 
 !["Screenshot of Tweeter Page with the toggle button"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-medium-desktop.png?raw=true)
 
