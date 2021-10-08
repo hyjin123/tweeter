@@ -6,7 +6,17 @@ This app is built using HTML, CSS, JS, jQuery and AJAX for for the front-end
 
 ## Final Product
 
-screenshots will go here
+!["Screenshot of Tweeter Page (medium sized window)"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-form-hidden.png?raw=true)
+
+!["Screenshot of Tweeter Page (large sized window)"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-large-desktop.png?raw=true)
+
+!["Screenshot of Tweeter Page with the toggle button"](https://github.com/hyjin123/tweeter/blob/master/docs/tweets-medium-desktop.png?raw=true)
+
+## Extra Features
+
+- Tweet form will slide up or down when the "Compose" button in the navigation bar is clicked
+
+- A red button will appear at the bottom right corner when the user scrolls through the tweets. This button will allow the user to jump back to the top of the page and automatically enables the tweet form.
 
 ## Getting Started
 
