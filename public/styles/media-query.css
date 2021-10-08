@@ -18,7 +18,7 @@
 @media only screen and (min-width: 1024px) {
   #avatar-name {
     width: 40%;
-    height: 600px;
+    height: 500px;
     float: left;
     margin-left: 3em;
     margin-top: 200px;
@@ -30,15 +30,19 @@
   .container {
     width: 50%;
     float: right;
-    margin-top: 200px;
+    margin-top: 160px;
   }
 
   nav {
     background-color: #4056A1;
   }
 
-  form {
-    padding-top: 0;
+  #logo {
+    color: #FFFFFF;
+  }
+
+  .nav-container {
+    color: #FFFFFF;
   }
 
   #logo {
