@@ -1,9 +1,8 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #ffd500;
+  background-color: #f5ee5f;
   background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
-  color: #FFFFFF;
   padding: 0 1.5em;
   font-family: 'Bungee', sans-serif;
   display: flex;
@@ -18,6 +17,7 @@ nav {
 #logo {
   font-size: 1.5em;
   padding-top: 25px;
+  color: #3565B0;
 }
 
 #tweet {
@@ -30,6 +30,7 @@ nav {
   display: flex;
   justify-content: center;
   padding-top: 8px;
+  color: #3565B0;
 }
 
 .heavy-font {
