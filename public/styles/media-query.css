@@ -40,4 +40,12 @@
   form {
     padding-top: 0;
   }
+
+  #logo {
+    color: #FFFFFF;
+  }
+
+  .nav-container {
+    color: #FFFFFF;
+  }
 }
