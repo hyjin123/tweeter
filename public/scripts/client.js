@@ -15,7 +15,8 @@ const loadTweets = function() {
       renderTweets(data);
     }
   })
-}
+};
+
 // Load the previous made tweets as soon as the browser is loaded
 loadTweets();
 
@@ -78,8 +79,14 @@ const errorMessage = function(message) {
   </section>
   `
   $(".container").prepend($markup);
-  $("#error").slideDown("slow")
+  $("#error").slideDown("slow");
 };
+
+// feature that toggles the form when you press the arrow button in the nav bar
+$("#tweet").click(function() {
+  $(".new-tweet").toggle("slow");
+  $("textarea").focus();
+});
 
 const $form = $("form");
 $form.submit(function(event) {

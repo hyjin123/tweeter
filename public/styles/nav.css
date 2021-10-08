@@ -26,6 +26,13 @@ nav {
   flex-direction: column;
 }
 
+#tweet i:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.5) translate(0, 5px);
+  cursor: pointer;
+  color: white;
+}
+
 .nav-container {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
