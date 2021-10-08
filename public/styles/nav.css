@@ -44,3 +44,22 @@ nav {
 .heavy-font {
   font-weight: 600;
 }
+
+#toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+  padding: 10px;
+  color: white;
+}
+
+#toggle-button:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2) translate(0, 5px);
+  cursor: pointer;
+}

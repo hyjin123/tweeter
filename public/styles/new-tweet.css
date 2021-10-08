@@ -21,7 +21,7 @@ textarea {
   font-size: 0.8em;
 }
 
-button {
+.tweet-button button {
   background-color: #4056A1;
   color: #FFFFFF;
   border-radius: 3px;
@@ -34,7 +34,7 @@ button {
   font-size: 0.9em;
 }
 
-button:hover {
+.tweet-button button:hover {
   background-color: #5C78D9;
   color: #444448;
   cursor: pointer;
@@ -46,4 +46,8 @@ button:hover {
   color: red;
   margin: 20px 40px 0;
   padding: 10px 0;
+}
+
+.red {
+  color: red;
 }
