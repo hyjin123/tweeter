@@ -104,7 +104,6 @@ $form.submit(function(event) {
     dataType: "text",
     data: serializedData,
     success: (data) => {
-      console.log("server received the data!")
       // Load the tweet right after submission
       loadTweets();
       //clear the form after data is passed to the server
