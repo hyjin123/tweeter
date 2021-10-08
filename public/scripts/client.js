@@ -20,6 +20,13 @@ const loadTweets = function() {
 // Load the previous made tweets as soon as the browser is loaded
 loadTweets();
 
+// feature that toggles the form when you press the arrow button in the nav bar
+$("#tweet").click(function() {
+  $(".new-tweet").toggle("slow");
+  $("#error").slideUp("slow");
+  $("textarea").focus();
+});
+
 // preventing XSS with Escaping
 const escape = function (str) {
   let div = document.createElement("div");
@@ -82,12 +89,7 @@ const errorMessage = function(message) {
   $("#error").slideDown("slow");
 };
 
-// feature that toggles the form when you press the arrow button in the nav bar
-$("#tweet").click(function() {
-  $(".new-tweet").toggle("slow");
-  $("textarea").focus();
-});
-
+// Ajax POST request
 const $form = $("form");
 $form.submit(function(event) {
   event.preventDefault();
