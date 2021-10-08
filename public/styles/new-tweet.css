@@ -37,6 +37,7 @@ button {
 button:hover {
   background-color: #5C78D9;
   color: #444448;
+  cursor: pointer;
 }
 
 .error-message {
